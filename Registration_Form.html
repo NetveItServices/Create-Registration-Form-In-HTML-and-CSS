@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <h2>Registration Form</h2>
+        <p>
+            Full Name 
+            <input type="text" name="full name"  placeholder="Enter full name">
+        </p>
+        <p>
+            Email address  
+            <input type="email" name="email address" placeholder="enter email address">
+        </p>
+        <p>
+            Mobile Number
+            <input type="number" name="mobile number" placeholder="enter mobile number">
+            Birth Date
+            <input type="date" name="birthdate" placeholder="mm-dd-yyyy" >
+        </p>
+        <p>
+         <label for="gender">Gender</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="not_say" name="gender" value="not_say">
+                <label for="not_say">Prefer not to say</label>
+            </div>
+
+        </p>
+        <p>
+            Address 
+            <input type="text" name="address" placeholder="Enter address">
+        </p>
+        <p>
+            <select id="country" name="user_country" > 
+                <option value="IN">India</option>
+                <option value="JP">Japan</option>
+                <option value="UK">United Kingdom</option>
+                <option value="US">United States</option>
+            </select>
+              
+            <input type="number" placeholder="Enter pastal code" style="width:40%;">
+        </p>
+        <p>
+            <button> Submit</button>
+        </p>
+    </form>
+</body>
+</html>
