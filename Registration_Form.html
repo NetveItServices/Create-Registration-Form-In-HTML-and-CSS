@@ -5,25 +5,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form>
+     
+    <form action="C:\xampp\htdocs\connection.php" method="post">
         <h2>Registration Form</h2>
         <p>
             Full Name 
-            <input type="text" name="full name"  placeholder="Enter full name">
+            <input type="text" name="full_name"  placeholder="Enter full name" required>
         </p>
         <p>
             Email address  
-            <input type="email" name="email address" placeholder="enter email address">
+            <input type="email" name="email_address" placeholder="enter email address" required>
         </p>
         <p>
             Mobile Number
-            <input type="number" name="mobile number" placeholder="enter mobile number">
+            <input type="number" name="mobile_number" placeholder="enter mobile number" required>
             Birth Date
-            <input type="date" name="birthdate" placeholder="mm-dd-yyyy" >
+            <input type="date" name="birthdate" placeholder="mm-dd-yyyy" required>
         </p>
         <p>
-         <label for="gender">Gender</label>
-            <div class="radio-group">
+         <label for="gender" aria-required="true">Gender</label>
+            <div class="radio-group" >
                 <input type="radio" id="male" name="gender" value="male">
                 <label for="male">Male</label>
                 <input type="radio" id="female" name="gender" value="female">
@@ -35,17 +36,17 @@
         </p>
         <p>
             Address 
-            <input type="text" name="address" placeholder="Enter address">
+            <input type="text" name="address" placeholder="Enter address" required>
         </p>
         <p>
-            <select id="country" name="user_country" > 
+            <select id="country" name="user_country" required > 
                 <option value="IN">India</option>
                 <option value="JP">Japan</option>
                 <option value="UK">United Kingdom</option>
                 <option value="US">United States</option>
             </select>
               
-            <input type="number" placeholder="Enter pastal code" style="width:40%;">
+            <input type="number" placeholder="Enter pin code" style="width:40%;" required>
         </p>
         <p>
             <button> Submit</button>
