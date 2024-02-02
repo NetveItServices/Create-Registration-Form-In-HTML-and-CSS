@@ -6,7 +6,7 @@
 </head>
 <body>
      
-    <form action="C:\xampp\htdocs\connection.php" method="post">
+    <form action="connection.php" method="post">
         <h2>Registration Form</h2>
         <p>
             Full Name 
@@ -39,14 +39,14 @@
             <input type="text" name="address" placeholder="Enter address" required>
         </p>
         <p>
-            <select id="country" name="user_country" required > 
+            <select id="country" name="country" required > 
                 <option value="IN">India</option>
                 <option value="JP">Japan</option>
                 <option value="UK">United Kingdom</option>
                 <option value="US">United States</option>
             </select>
               
-            <input type="number" placeholder="Enter pin code" style="width:40%;" required>
+            <input type="number" name="pin" placeholder="Enter pin code" style="width:40%;" required>
         </p>
         <p>
             <button> Submit</button>
